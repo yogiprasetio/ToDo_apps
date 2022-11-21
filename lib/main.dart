@@ -30,6 +30,7 @@ final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
+    name: 'Todo-41',
     options: DefaultFirebaseOptions.currentPlatform,
   );
   final NotificationHelper _notificationHelper = NotificationHelper();
@@ -139,8 +140,8 @@ class _MyAppState extends State<MyApp> {
   }
 
   void showFlutterNotification(RemoteMessage event) {
-    debugPrint("Message Data => $event");
-    debugPrint("Title => {$event.notification?.title??}");
+    debugPrint("Message Data => $event.id");
+    debugPrint("Title => {$event.description}");
   }
 }
 
