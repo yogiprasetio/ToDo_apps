@@ -30,7 +30,7 @@ final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
-    name: 'Todo-41',
+    // name: 'Todo-42',
     options: DefaultFirebaseOptions.currentPlatform,
   );
   final NotificationHelper _notificationHelper = NotificationHelper();
